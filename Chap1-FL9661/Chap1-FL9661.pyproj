@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>28fcd840-0d60-4d64-97b1-988e7aea004f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Chap1_FL9661.py</StartupFile>
+    <StartupFile>Chap1-1_FL9661.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Chap1_FL9661.py" />
+    <Compile Include="Chap1-2_FL9661.py" />
+    <Compile Include="Chap1-1_FL9661.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
