@@ -54,9 +54,8 @@ else:
         if income >= 85528.01: #85528 above = higer tax band
             tax = ((income -85528)*0.32 + 14839) # higher tax earning @ 32% + 18% tax allowance
             print ('higher income tax bracket') # denotes tax band to user
-
 tax = round(tax, 0)
-if tax < 0: # prevents a negative tax value being return
+if tax <= 0: # prevents a negative tax value being return
     print ('The tax is:', 0, 'thalers not enought taxable income') 
 else:
     if tax > 0:
