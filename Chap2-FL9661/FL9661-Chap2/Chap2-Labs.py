@@ -1,24 +1,20 @@
+# F Lyness #
+
 print ("Lab 2.4.1.7")
 # Step 1
 Var1 = ("John")
 Var2 = ("Mary")
 Var3 = ("Adam")
-
 # Step 2
 John = 3 
 Mary = 5
 Adam = 6 
-
 # Step 3
 print (John, Mary, Adam, sep=", ")
-
 # Step 4
 total_apples = John + Mary + Adam
-
 # Step 5
 print ("total_apples =", total_apples, "\n")
-
-
 print ("Lab 2.4.1.9")
 kilometers = 12.25
 miles = 7.38
