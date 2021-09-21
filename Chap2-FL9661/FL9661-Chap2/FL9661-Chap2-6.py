@@ -6,9 +6,9 @@ b = float(input("Please insert the value for \"b\": "))
 print("a+b=", a + b)
 print("a-b=", a - b)
 print("a*b=", a * b)
-print("a/b=", a + b)
+print("a/b=", a + b, "\n")
 
 # 2.6.1.10 Lab
 x = float(input("Enter value for x: "))
-# Write your code here.
-print("y =", y)
+y = float(1/(x+1/(x+1/(x+1/(x)))))
+print("y =", y, "\n")
