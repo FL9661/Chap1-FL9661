@@ -44,9 +44,8 @@ else: # if pre-defined value does not match check var aginst
 # 3.1.1.10 Lab - if-else statements
 income = float(input("Enter the annual income: "))
 tax = 0
-
 if income == 0:
-    print ('Get a job and start paying taxes nai')
+    print ('Get a job and start paying taxes.')
 else:
     if income <= 85528: #85528 and below = low tax band
         tax = ((income * 0.18)- 556.02)# lower tax rate @ 18% + tax relief)
@@ -57,15 +56,14 @@ else:
             print ('higher income tax bracket') # denotes tax band to user
 
 tax = round(tax, 0)
-if tax < 0: # prevents a negative number return
+if tax < 0: # prevents a negative tax value being return
     print ('The tax is:', 0, 'thalers not enought taxable income') 
 else:
-    if tax >0.01:
+    if tax > 0:
         print ('The tax is:', tax, 'thalers')
 
 # 3.1.1.12 Lab - if-else statements
 year = int(input('Enter a year: '))
-
 if year < 1582: # excludes years pre-dating Gregorian calendar
     print ('Not within the Gregorian calendar period.') # outputs to console that input is invalid
 else:
