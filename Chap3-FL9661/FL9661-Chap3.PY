@@ -120,16 +120,5 @@ for letter in user_word:
 print (word_without_vowels) #prints program output on a single line
 
 ### 3.2.1.14 - building pyramid blocks  - HELP NEEDED HERE ###
-blocks = int(input("Enter the number of blocks: "))
-height = 0
-in_layer = 1
-while in_layer <= blocks:
-    height += 1
-    blocks -= in_layer
-    in_layer += 1
-print("The height of the pyramid:", height)
-#YouTube help used but I still did not understand
-
-### 3.2.1.14 - building pyramid blocks  - HELP NEEDED HERE ###
 
 #still trying to work this out on the white board
