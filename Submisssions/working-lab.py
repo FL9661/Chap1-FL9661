@@ -75,8 +75,4 @@ while in_layer <= blocks:
     blocks -= in_layer
     in_layer += 1
 print("The height of the pyramid:", height)
-#YouTube help used but I still did not understand
-
-### 3.2.1.14 - building pyramid blocks  - HELP NEEDED HERE ###
-
-#still trying to work this out on the white board
+#
