@@ -67,9 +67,7 @@ for letter in user_word:
 print (word_without_vowels) #prints program output on a single line
 
 ### 3.2.1.14 - building pyramid blocks  ###
-
 blocks = int(input('Enter the number of blocks: '))
-
 height = 0 # Light Blub var
 in_row = 1 # Light Blub var, initial row is never below 1 but blocks can be zero
 while in_row <= blocks: # Light Blub var = is the row number less or equal to blocks
