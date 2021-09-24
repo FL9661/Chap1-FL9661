@@ -21,6 +21,8 @@ print ('number of list entries is: ', len(hat_numbers))
 
 # Lab 3.4.1.13: the Beatles #
 
+# Lab 3.4.1.13: the Beatles #
+
 # step 1 create an empty list named beatles;
 beatles = [] # name of list = [] empty element container
 print('Step 1:', beatles) # Outputs list elemetns to console 
@@ -47,8 +49,10 @@ for i in beatles:
 del beatles [4] # Del George Harrison
 del beatles [3] # Del Stu Sutcliffe
 
+#Step 5
+beatles.insert(0, 'Ringo Star')
 print('step 4:', beatles)
-print("The Fab", len(beatles)) # testing list legth
+
 
 # Lab 3.6.1.9 - copying uniques numbers to a new list
 

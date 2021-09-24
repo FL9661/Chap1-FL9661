@@ -1,16 +1,31 @@
-# Lab 3.6.1.9 - copying uniques numbers to a new list # 
+# Lab 3.4.1.13: the Beatles #
 
-Forename = input('Please enter your Forename: ') # users firstname
-Surname = input('Please enter your Forename: ') # users surname
-mylist = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]#current list
-newlist = [] #new blank list
+# step 1 create an empty list named beatles;
+beatles = [] # name of list = [] empty element container
+print('Step 1:', beatles) # Outputs list elemetns to console 
 
-print('Hello', Forename, Surname, 'I have taken your old list that contained')
-print('these values ', mylist, '.', '\n', '\n', sep='' )
+# step 2 - Add first memebr elements
+beatles.append('John Lennon') #0
+beatles.append('Paul McCartney') #1
+beatles.append('George Harrison') #2
+print('Step 2:', beatles) # Outputs list elemetns to console 
 
-for i in mylist: #for numbers within mylist
-        if i not in newlist: #if i is unique not in newlist
-            newlist.append (i) # add i to new list
+# step 3 - input new memebr elements
+a = input ('enter Pete Best: ')
+b = input ('enter Stu Sutcliffe: ')
 
-print('I have made a new list that has', (len(newlist)), 'unique instances. These instances are:')
-print (newlist)
+for i in beatles: 
+    if a == ('Pete Best'):
+        beatles.append (a)
+    if b == ('Stu Sutcliffe'):
+        beatles.append (b)
+        print('Step 3:', beatles)
+        break
+
+# step 4 - remove old memebr elements
+del beatles [4] # Del George Harrison
+del beatles [3] # Del Stu Sutcliffe
+
+#Step 5
+beatles.insert(0, 'Ringo Star')
+print('step 4:', beatles)
