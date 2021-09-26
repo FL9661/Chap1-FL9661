@@ -140,11 +140,10 @@ This is the current game state:
 for i in range(3): print(TTTBoard[i]) 
 Input2 = '-'
 UserChoice2 = ''
-
 while Input2 == '-':
 	print(player2, end=' ')
 	UserChoice2= input('where would you like to insert a "O"?')
-	elif UserChoice2 == '1':
+	if UserChoice2 == '1':
 		TTTBoard [0] [0] = 'O'
 		Input2 = '1'
 	elif UserChoice2 == '2':
@@ -211,8 +210,7 @@ UserChoice3 = ''
 while Input3 == '-':
 	print(player1, end=' ')
 	UserChoice3 = input('where would you like to insert a "X"?')
-		print ('please try again, this slot has already been selected:')
-	elif UserChoice3 == '1':
+	if UserChoice3 == '1':
 		TTTBoard [0] [0] = 'X'
 		Input3 = '1'
 	elif UserChoice3 == '2':
@@ -277,9 +275,7 @@ UserChoice4 = ''
 while Input4 == '-':
 	print(player2, end=' ')
 	UserChoice4= input('where would you like to insert a "O"?')
-	if  UserChoice4 == UserChoice1 or UserChoice2 or UserChoice3:
-		print ('please try again, this slot has already been selected:')
-	elif UserChoice4 == '1':
+	if UserChoice4 == '1':
 		TTTBoard [0] [0] = 'O'
 		Input4 = '1'
 	elif UserChoice4 == '2':
@@ -346,9 +342,7 @@ UserChoice5 = ''
 while Input5 == '-':
 	print(player1, end=' ')
 	UserChoice5= input('where would you like to insert a "X"?')
-	if  UserChoice5 == UserChoice1 or UserChoice2 or UserChoice3 or UserChoice4:
-		print ('please try again, this slot has already been selected:')
-	elif UserChoice5 == '1':
+	if UserChoice5 == '1':
 		TTTBoard [0] [0] = 'X'
 		Input5 = '1'
 	elif UserChoice5 == '2':
@@ -416,9 +410,7 @@ UserChoice6 = ''
 while Input6 == '-':
 	print(player2, end=' ')
 	UserChoice6= input('where would you like to insert a "O"?')
-	if  UserChoice6 == UserChoice1 or UserChoice2 or UserChoice3 or UserChoice4 or UserChoice5:
-		print ('please try again, this slot has already been selected:')
-	elif UserChoice6 == '1':
+	if UserChoice6 == '1':
 		TTTBoard [0] [0] = 'O'
 		Input6 = '1'
 	elif UserChoice6 == '2':
@@ -484,9 +476,7 @@ UserChoice7 = ''
 
 while Input7 == '-':
 	print(player1, end=' ')
-	UserChoice7= input('where would you like to insert a "X""\?"')
-	if  UserChoice7 == UserChoice1 or UserChoice2 or UserChoice3 or UserChoice4 or UserChoice5 or UserChoice6:
-		print ('please try again, this slot has already been selected:')
+	UserChoice7= input('where would you like to insert a "X"?')
 	if UserChoice7 == '1':
 		TTTBoard [0] [0] = 'X'
 		Input7 = '1'
@@ -553,10 +543,8 @@ UserChoice8 = ''
 
 while Input8 == '-':
 	print(player2, end=' ')
-	UserChoice8= input('where would you like to insert a "O""\?"')
-	if  UserChoice8 == UserChoice1 or UserChoice2 or UserChoice3 or UserChoice4 or UserChoice5 or UserChoice6 or UserChoice7:
-		print ('please try again, this slot has already been selected:')
-	elif UserChoice8 == '1':
+	UserChoice8= input('where would you like to insert a "O"?')
+	if UserChoice8 == '1':
 		TTTBoard [0] [0] = 'O'
 		Input8 = '1'
 	elif UserChoice8 == '2':
@@ -622,10 +610,8 @@ UserChoice9 = ''
 
 while Input9 == '-':
 	print(player1, end=' ')
-	UserChoice9= input('where would you like to insert a "X""\?"')
-	if  UserChoice9 == UserChoice1 or UserChoice2 or UserChoice3 or UserChoice4 or UserChoice5 or UserChoice6 or UserChoice7 or UserChoice8:
-		print ('please try again, this slot has already been selected:')
-	elif UserChoice9 == '1':
+	UserChoice9= input('where would you like to insert a "X"?')
+	if UserChoice9 == '1':
 		TTTBoard [0] [0] = 'X'
 		Input9 = '1'
 	elif UserChoice9 == '2':
