@@ -204,7 +204,6 @@ print ('\n','                            Thank you ', player2, ' you are now Pla
 Function_AnyKey() # calls programmer defined function
 clear()
 
-
 #######################################################################################################
 #                                                                                                     #
 #                                            Confirmation                                             #
@@ -232,39 +231,22 @@ print ('''
 +-----------------------------------------------------------------------------------------------------+
 
 ''')# multi line print
-
-UserInput1 = ''
-Executionor = ''
+Executionor =''
 Hangman = ''
+UserInput1 = ''
 
 while UserInput1 == '':
-	
-	print('Press 1 for ', player1, ' or press 2 for ', player2, 'or Q to quit. >>> ', sep='', end='')
-	UserInput1 = input().upper
-	if UserInput1 == '1':
-		Executionor == player1
-		Hangman == player2
+	print('Press 1 for ', player1, ' or press 2 for ', player2, '. >>> ', sep='', end='')
+	UserInput1 = input('>>>').upper
+	if Executionor == '1':
+		Executionor = player1
+		print ('The Executionor is', Executionor)
+		Hangman = player2
+		print ('The Hangman is', Hangman)
 	elif UserInput1 == '2':
-		Executionor == player2
-		Hangman == player1
-	elif UserInput1 == 'Q':
-		import sys # importing a system function
-		import time# importing a system timer function
-		print('Good Bye in 5 seconds...') # prints acknowledgement output to console
-		timer = 5 # start of a visible countdown timer set to 5
-		while timer != 1: # if timer is not 1 run loop
-			import time # import sys function
-			print (timer) # prints the value of timer
-			time.sleep(1) # delays next command by 1 seconds
-			timer -= 1 # subtracts 1 each cycle until it reachs 1
-		print ('Good Bye') # prints last message
-		time.sleep(2) # delays next command by 2 seconds
-		sys.exit() # forces exit from Game
-	elif StartGame != 'Q': # if user inputs any other value expect Y or N
-		print('Press 1 for ', player1, ' or press 2 for ', player2, 'or Q to quit. >>> ', sep='', end='')
-		UserInput1 = input().upper
-
-print ('The Executionor is', Executionor)
-print ('The Hangman is', Hangman)
+		Executionor = player2
+		Hangman = player1
+		print ('The Executionor is', Executionor)
+		print ('The Hangman is', Hangman)
 
 print ('end of loop')

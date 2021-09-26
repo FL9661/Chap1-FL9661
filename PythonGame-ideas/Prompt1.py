@@ -1,33 +1,23 @@
+player1= 'Francis'
+player2 = 'Gemma'
 
-print('''Tic Tac Toe
+Executionor = ''
+Hangman = ''
+UserConfirmation1 = ''
 
-Instructions - Please enter coords using the map below
+print('Press 1 for ', player1, ' or press 2 for ', player2, '. >>> ', sep='', end='')
+UserInput1 = input('').upper
 
-Board Co-Ordinates
+while UserInput1 != False:
+	if Executionor == '1':
+		Executionor = player1
+		print ('The Executionor is', Executionor)
+		Hangman = player2
+		print ('The Hangman is', Hangman)
+	elif UserInput1 == '2':
+		Executionor = player2
+		Hangman = player1
+		print ('The Executionor is', Executionor)
+		print ('The Hangman is', Hangman)
 
-Row1 = 0,0 - 0,1, - 0,2
-Row2 = 1,0 - 1,1, - 1,2
-Row3 = 2,0 - 2,1, - 2,2
-
-''')
-
-
-
-
-
-
-
-TTTBoard = [['_' for i in range(3)] for j in range(3)] # create complete board
-
-for i in range(3): print(TTTBoard[i]) #print complete board
-print()
-
-Player1 = 'Francis'
-print('Player1 is ', Player1)
-
-for i in range(3):
-    if input('please enter coord:') == i:
-        TTTBoard.append('O')
-
-for i in range(3): print(TTTBoard[i]) #print complete board
-print()
+print ('end of loop')
