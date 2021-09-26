@@ -9,7 +9,6 @@
 
 import os # used to import the Windows CLS command
 clear = lambda: os.system('cls') # assigns Windoes CLS command to clear()
-
 import time# importing a system timer function
 
 #######################################################################################################
