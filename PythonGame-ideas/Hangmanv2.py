@@ -237,8 +237,8 @@ UserInput1 = ''
 
 while UserInput1 == '':
 	print('Press 1 for ', player1, ' or press 2 for ', player2, '. >>> ', sep='', end='')
-	UserInput1 = input('>>>').upper
-	if Executionor == '1':
+	UserInput1 = input()
+	if UserInput1 == '1':
 		Executionor = player1
 		print ('The Executionor is', Executionor)
 		Hangman = player2
@@ -249,4 +249,10 @@ while UserInput1 == '':
 		print ('The Executionor is', Executionor)
 		print ('The Hangman is', Hangman)
 
+print ('The Executionor is', Executionor)
+print ('The Hangman is', Hangman)
+
 print ('end of loop')
+
+Function_AnyKey() # calls programmer defined function
+clear()
