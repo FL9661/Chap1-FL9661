@@ -4,7 +4,7 @@
 var = int(input('Please input a numerical value: ')) #user has to input a whole number
 print (var >= 100) # returns a value of false if input value is less than 100
 
-# 3.1.1.10 Lab - Comparison operators and conditional execution
+# Lab 3.1.1.10 - Comparison operators and conditional execution
 plant = (input ('Please type plant name: ')) #initial user input creates plant var value
 if plant == 'SPATHIPHYLLUM': #plant var value compaired against pre-defined value 1
 	print ('"Yes - Spathiphyllum is the best plant ever!"') # if match print text on console
