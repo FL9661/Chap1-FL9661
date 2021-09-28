@@ -1,21 +1,13 @@
-player1 = 'Francis'
-player2 = 'You'
+year = int(input('Enter a year: '))
 
-Executionor =''
-Hangman = ''
-UserInput1 = ''
-
-while UserInput1 == '':
-	print('Press 1 for ', player1, ' or press 2 for ', player2, '. >>> ', sep='', end='')
-	UserInput1 = input()
-	if UserInput1 == '1':
-		Executionor = player1
-		Hangman = player2
-	elif UserInput1 == '2':
-		Executionor = player2
-		Hangman = player1
-		print ('The Executionor is', Executionor)
-		print ('The Hangman is', Hangman)
-
-print ('The Executionor is', Executionor)
-print ('The Hangman is', Hangman)
+if year < 1582: # excludes years pre-dating Gregorian calendar
+    print ('Not within the Gregorian calendar period.') # outputs to console that input is invalid
+else:
+    if (year % 4 ) != 0: # if output is not equal to 0 = common year
+       print ('common year') 
+    elif (year % 100 ) != 0: # if output is not equal to 0 = leap year
+       print ('leap year')
+    elif (year % 400 ) != 0: # if output is not equal to 0 = common year
+       print ('common year')
+    else:
+        print ('leap year') # everyelse is a leap year

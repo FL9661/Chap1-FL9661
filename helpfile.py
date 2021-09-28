@@ -144,5 +144,73 @@ else:
 
 # Lab 4.3.1.9 Prime numbers - how to find them
 
-# Lab 4.3.1.10 Converting fuel consumption
 
+# Lab 4.3.1.10 : Converting fuel consumption
+
+def liters_100km_to_miles_gallon(litres):
+    km_per_litres = 100 / litres  #100/litres = km per litre 25.64
+    miles_per_litre = km_per_litres / 1.609344 # miles per litre
+    gallon = 3.785411784 #litres
+    miles_per_gallon = miles_per_litre * gallon
+    return miles_per_gallon
+    
+def miles_gallon_to_liters_100km(miles):
+    mile2km = 1 * 1.609344 # 1.62137119223733396961743418436332
+    gallon = 3.785411784 #litres
+    total_Km_Per_Gallon = miles * mile2km #= 97.0434432
+    Km_Per_litre = total_Km_Per_Gallon / gallon # 25.636165558045401805089324464363 km per litre
+    litres_to_100km = 100 / Km_Per_litre
+    return 'litres to 100Km: ', litres_to_100km # not sure why this now prints an additional () with brackets and is brackets used it returns an additional none line
+   
+print(liters_100km_to_miles_gallon(3.9))
+print(liters_100km_to_miles_gallon(7.5))
+print(liters_100km_to_miles_gallon(10.))
+print(miles_gallon_to_liters_100km(60.3))
+print(miles_gallon_to_liters_100km(31.4))
+print(miles_gallon_to_liters_100km(23.5))
+
+###Expected Output
+# 0.31143162393162
+# 31.36194444444444
+# 23.52145833333333
+# 3.9007393587617467
+# 7.490910297239916
+#10.009131205673757
+
+# Dictionary help resolution example
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+words = ['cat', 'lion', 'horse']
+for word in words:
+    if word in dictionary:
+        print(word, "->", dictionary[word])
+    else:
+        print(word, "is not in dictionary")
+
+# adding to a tuple
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+dictionary.update({"duck": "canard"})
+print(dictionary)
+
+#Gluing two Tuples
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+for item in (d1, d2):
+    d3.update(item)
+print(d3)
+
+#counting duplciates in tuples
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = tup.count(2)
+print(duplicates)    # outputs: 4
+
+#Converting a tuple into a dictionary
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+colors_dictionary = dict(colors)
+print(colors_dictionary)
+
+#Copy Tuple to Tuple
+my_dictionary = {"A": 1, "B": 2}
+copy_my_dictionary = my_dictionary.copy()
+my_dictionary.clear()
+print(copy_my_dictionary)
