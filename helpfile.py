@@ -144,7 +144,6 @@ else:
 
 # Lab 4.3.1.9 Prime numbers - how to find them
 
-
 # Lab 4.3.1.10 : Converting fuel consumption
 
 def liters_100km_to_miles_gallon(litres):
@@ -176,6 +175,13 @@ print(miles_gallon_to_liters_100km(23.5))
 # 3.9007393587617467
 # 7.490910297239916
 #10.009131205673757
+
+# Setting Default Values
+def introduction(first_name, last_name="Smith"): # smith is the default
+    print("Hello, my name is", first_name, last_name)
+
+# Call the function here.
+
 
 # Dictionary help resolution example
 dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}

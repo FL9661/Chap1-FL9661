@@ -93,3 +93,8 @@ print(miles_gallon_to_liters_100km(23.5))
 # 3.9007393587617467
 # 7.490910297239916
 #10.009131205673757
+
+def intro(a=input('first name: '), b=input('last name :')):
+    print("My name is", a , b)
+
+intro()
