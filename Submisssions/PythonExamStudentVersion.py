@@ -136,9 +136,9 @@ print (ExamMarks_tuple)
 #18) Dictionary question (9 marks)
 #create a dictionary
 #merging lists to dictionaries
-ExanDictionary = dict(zip(students, ExamMarks_tuple))
+ExamDictionary = dict(zip(students, ExamMarks_tuple))
 
 #write code which adds both the student and a their corresponding mark. 
 #do not perform this long hand (as in writing out the values above). Use data
-print (ExanDictionary)#from the existing tuples above to create the dictionary
+print (ExamDictionary)#from the existing tuples above to create the dictionary
 
